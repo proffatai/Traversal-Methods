@@ -35,7 +35,7 @@ describe('Working on different environments',() => {
 
 describe('Working on different environments',() => { 
 
-  it.only('Prod enviroment',{keystrokeDelay:1000}, () => {
+  it.only('Prod enviroment', () => {
     cy.visit(Cypress.env("prod"))
     cy.get('.gLFyf').type('Hello world in 1sec',{keystrokeDelay:1000})  //adding delay on selector level
   })
